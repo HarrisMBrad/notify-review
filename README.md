@@ -1,2 +1,5 @@
 # notify-review
-Notify with expo 
+
+Notify with Expo
+
+By: T.J. McArty
