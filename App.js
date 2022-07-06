@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import AppState from './src/AppState/AppState';
 import registerNNPushToken from 'native-notify';
 import Note from './src/screens/Note/Note';
@@ -10,8 +10,19 @@ export default function App() {
   
 
   return (
-
-    <AppState />
+    <><View style={styles.container}>
+      <AppState>
+        <StatusBar style="auto" />
+        <Text>
+          Open up and change me...
+        </Text>
+        <Note>
+          <Text>
+            Hello Homie.
+          </Text>
+        </Note>
+      </AppState>
+    </View><AppState /></>
   
   )
 };
