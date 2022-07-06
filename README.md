@@ -2,4 +2,4 @@
 
 Notify with Expo
 
-By: T.J. McArty
+- TJ McCarty
