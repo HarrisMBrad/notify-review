@@ -4,7 +4,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 export default function AllNotes({ navigation, AppState }) {
 
       const { allNotes, setNote } = AppState;
-      //console.log(AppState);
+      console.log(AppState);
       const handlePress = (element) => {
             setNote(element);
 
