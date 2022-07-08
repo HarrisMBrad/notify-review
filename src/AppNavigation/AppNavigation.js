@@ -2,7 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AllNotes from '../screens/AllNotes/AllNotes';
-import AppState from '../AppState/AppState';
+import CreateNote from '..screens/Allnotes/CreateNote/CreateNote';
 import Note from '../screens/Note/Note';
 
 const Stack = createNativeStackNavigator();
@@ -20,11 +20,16 @@ export default function AppNavigation({ AppState }) {
 
                         </Stack.Screen>
                         <AppState>
-                              <Stack.Screen name="Screen3">
+                              <Stack.Screen name="Home">
+                                    {props => <Home {...props} AppState={AllNotes} />}
+                              </Stack.Screen>
+
+                              <Stack.Screen name="CreateNote">
+                                    {props => <CreateNote {...props} AppState={AllNotes} />}
                               </Stack.Screen>
                         </AppState>
                   </Stack.Navigator>
             </NavigationContainer>
       );
 }
-// Why will AppState not render? 
+// Why will AppState not render... Do I need a screen.navagation.userAgent?
