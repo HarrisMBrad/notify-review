@@ -32,4 +32,5 @@ export default function AppNavigation({ AppState }) {
             </NavigationContainer>
       );
 }
-// Why will AppState not render... Do I need a screen.navagation.userAgent?
+// Why will AppState not render... metadata
+// Navigation Toggle component for footer nav...
